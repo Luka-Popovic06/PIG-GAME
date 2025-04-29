@@ -18,4 +18,17 @@ body {
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);;
   background-color: background-color: rgba(255, 255, 255, 0.35);
 }
+.middle-box {
+  position: absolute;
+}
+.player-box-1 {
+  background-color: rgba(255, 255, 255, 0.538);
+  width: 50%;
+  border-top-left-radius: 10px;
+}
+.player-box-2 {
+  width: 50%;
+  border-top-right-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
 
