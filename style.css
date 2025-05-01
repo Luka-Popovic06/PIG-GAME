@@ -4,6 +4,7 @@
 }
 body {
   background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  font-family: sans-serif;
 }
 .container {
   width: 70%;
@@ -15,20 +16,22 @@ body {
   display: flex;
   justify-content: space-between;
   position: relative;
-  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);;
-  background-color: background-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
 }
-.middle-box {
+#btn-new-game {
   position: absolute;
+  width: 170px;
+  border-radius: 40px;
+  font-size: 17px;
+  border: none;
+  height: 50px;
+  top: 35px;
+  left: 42%;
+  background-color: #ffffffa6;
 }
-.player-box-1 {
-  background-color: rgba(255, 255, 255, 0.538);
-  width: 50%;
-  border-top-left-radius: 10px;
+#dice {
+  position: absolute;
+  font-size: 70px;
+  top: 30%;
+  left: 48.2%;
 }
-.player-box-2 {
-  width: 50%;
-  border-top-right-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.4);
-}
-
