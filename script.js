@@ -54,3 +54,20 @@ function scoreing() {
     currentScorePlayerOne.textContent = scorePlayerOne;
   }
 }
+function coloring() {
+  if (activPlayer === 'player 2') {
+    playerBoxOne.style.backgroundColor = 'rgba(255, 255, 255, 0.4)';
+    playerBoxTwo.style.backgroundColor = 'rgba(255, 255, 255, 0.538)';
+  } else if (activPlayer === 'player 1') {
+    playerBoxTwo.style.backgroundColor = 'rgba(255, 255, 255, 0.4)';
+    playerBoxOne.style.backgroundColor = 'rgba(255, 255, 255, 0.538)';
+  }
+}
+//btn Hold
+btnHold.addEventListener('click', function () {
+  totalScoring();
+  activPlayerSelection();
+  scoreing();
+  coloring();
+  whoWin();
+});
