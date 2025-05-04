@@ -82,3 +82,15 @@ function totalScoring() {
     random = 1;
   }
 }
+function whoWin() {
+  if (scorePlayerOneTotal >= 100) {
+    playerBoxOne.style.backgroundColor = '#302f2f';
+    btnHold.disabled = true;
+    btnRollDice.disabled = true;
+  } else if (scorePlayerTwoTotal >= 100) {
+    playerBoxTwo.style.backgroundColor = '#302f2f';
+    btnHold.disabled = true;
+    btnRollDice.disabled = true;
+  }
+}
+//BTN NEW GAME
