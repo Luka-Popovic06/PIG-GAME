@@ -45,3 +45,12 @@ function activPlayerSelection() {
     }
   }
 }
+function scoreing() {
+  if (activPlayer === 'player 2') {
+    scorePlayerTwo += randomValue;
+    currentScorePlayerTwo.textContent = scorePlayerTwo;
+  } else if (activPlayer === 'player 1') {
+    scorePlayerOne += randomValue;
+    currentScorePlayerOne.textContent = scorePlayerOne;
+  }
+}
