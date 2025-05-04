@@ -71,3 +71,14 @@ btnHold.addEventListener('click', function () {
   coloring();
   whoWin();
 });
+function totalScoring() {
+  if (activPlayer === 'player 1') {
+    scorePlayerOneTotal = scorePlayerOne + scorePlayerOneTotal;
+    totalScorePlayerOne.textContent = scorePlayerOneTotal;
+    random = 1;
+  } else if (activPlayer === 'player 2') {
+    scorePlayerTwoTotal = scorePlayerTwo + scorePlayerTwoTotal;
+    totalScorePlayerTwo.textContent = scorePlayerTwoTotal;
+    random = 1;
+  }
+}
