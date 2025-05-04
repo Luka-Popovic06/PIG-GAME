@@ -30,3 +30,18 @@ btnRollDice.addEventListener('click', function () {
     dices.classList.remove('hidden');
   });
 });
+function activPlayerSelection() {
+  randomValue = random;
+  if (random === 1) {
+    randomValue = 0;
+    if (activPlayer === 'player 2') {
+      activPlayer = 'player 1';
+      scorePlayerTwo = 0;
+      currentScorePlayerTwo.textContent = scorePlayerTwo;
+    } else if (activPlayer === 'player 1') {
+      activPlayer = 'player 2';
+      scorePlayerOne = 0;
+      currentScorePlayerOne.textContent = scorePlayerOne;
+    }
+  }
+}
