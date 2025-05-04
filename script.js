@@ -94,3 +94,16 @@ function whoWin() {
   }
 }
 //BTN NEW GAME
+btnNewGame.addEventListener('click', function () {
+  scorePlayerOne = 0;
+  scorePlayerTwo = 0;
+  scorePlayerOneTotal = 0;
+  scorePlayerTwoTotal = 0;
+  totalScorePlayerTwo.textContent = scorePlayerTwoTotal;
+  totalScorePlayerOne.textContent = scorePlayerOneTotal;
+  activPlayer = 'player 1';
+  playerBoxTwo.style.backgroundColor = 'rgba(255, 255, 255, 0.4)';
+  playerBoxOne.style.backgroundColor = 'rgba(255, 255, 255, 0.538)';
+  btnHold.disabled = false;
+  btnRollDice.disabled = false;
+});
